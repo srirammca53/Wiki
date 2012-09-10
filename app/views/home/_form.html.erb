@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<h2> Fill the details to create new wiki user </h2>
+<hr/> 
+<%= form_tag '/home' do %>
+<table>
+	<tr>
+		<td><b> Login Name </b></td>
+		<td><%= text_field_tag 'loginName' %></td>
+	</tr>
+	<tr>
+		<td><b> Wiki Name </b></td>
+		<td><%= text_field_tag 'wikiName' %></td>
+	</tr>
+	<tr>
+		<td><b> Full Name </b></td>
+		<td><%= text_field_tag 'fullName' %></td>
+	</tr>
+	<tr>
+		<td><b> Email </b></td>
+		<td><%= text_field_tag 'email_id' %></td>
+	</tr>
+</table>
+<div>
+<%= submit_tag "submit" %>
+</div>
+<% end %>
+</center>
+</body>
+</html>
