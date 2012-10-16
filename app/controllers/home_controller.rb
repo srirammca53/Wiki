@@ -45,6 +45,6 @@ array = @items.xpath('//users/user')
 #raise File.read('/home/ram/sriram/ruby/userdatabase.xml').inspect
 	#close the file which is opened 
 	file.close
-  render "show"
+  redirect_to  "https://teamscrum.com:8080/wiki"
   end
 end
